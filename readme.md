@@ -9,7 +9,7 @@
 优点：完整显示图片；
 缺点：有黑边。
 
-![Alt text](image/QQ20181210-1.jpg?raw=true "Contain")
+![Alt text](image/contain-demo.png?raw=true "Contain")
 
 ### 2. cover方式
 缩放后，裁剪图片的一部分，只显示图片的中间部分。保证图片的短边完全显示，长边裁剪。不会有黑边。
@@ -17,4 +17,4 @@
 优点：没有黑边，显示较为美观
 缺点：图片被裁剪
 
-![Alt text](image/QQ20181210-1.jpg?raw=true "Cover")
+![Alt text](image/cover-demo.png?raw=true "Cover")
