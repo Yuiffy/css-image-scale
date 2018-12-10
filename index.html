@@ -68,7 +68,10 @@
             height: 20vh;
             width: 20vh;
             object-fit: cover;
-            border: solid 1px black;
+        }
+
+        .circle {
+            border-radius: 100vh;
         }
     </style>
 </head>
@@ -87,19 +90,28 @@
         1.3. crop the image, scale with width shorter edge full with div
     </div>
     <div class="image-field">
+        <div class="the-image no-stretch-cover circle"></div>
+        1.4. 1.3 with circle border
+    </div>
+    <div class="image-field">
         <img src="image/QQ20181210-1.jpg" class="img-origin" />
-        <br/>
+        <br />
         2.1. &lt;img> origin
     </div>
     <div class="image-field">
         <img src="image/QQ20181210-1.jpg" class="img-crop-contain" />
-        <br/>
+        <br />
         2.2. &lt;img> scale show all image
     </div>
     <div class="image-field">
         <img src="image/QQ20181210-1.jpg" class="img-crop-cover" />
-        <br/>
+        <br />
         2.3. &lt;img> scale with width shorter edge full with div
+    </div>
+    <div class="image-field">
+        <img src="image/QQ20181210-1.jpg" class="img-crop-cover circle" />
+        <br />
+        2.4. &lt;img> 2.3 with circle border
     </div>
 </div>
 </body>
