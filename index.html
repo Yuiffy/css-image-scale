@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Scale</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        .container {
+            width: 80%;
+            background: white;
+            min-height: 100vh;
+            margin: 0 auto;
+            position: relative;
+            padding-top: 1px;
+        }
+
+        .image-field {
+            display: block;
+            width: 90%;
+            height: 25%;
+            min-height: 100px;
+            margin: 20px auto;
+            border: solid 1px black;
+            padding: 8px;
+        }
+
+        .the-image {
+            background-image: url("image/QQ20181210-1.jpg");
+            height: 20vh;
+            background-repeat: no-repeat;
+            width: auto;
+        }
+
+        .origin {
+            background-size: contain;
+        }
+
+        .no-stretch-cover {
+            background-size: cover;
+            background-position: center center;
+            width: 20vh;
+            height: 20vh;
+        }
+
+        .scale-contain {
+            background-size: contain;
+            background-position: center center;
+            width: 20vh;
+            height: 20vh;
+            border: solid 1px black;
+        }
+
+        .img-origin {
+            height: 20vh;
+        }
+
+        .img-crop-contain {
+            height: 20vh;
+            width: 20vh;
+            object-fit: contain;
+            border: solid 1px black;
+        }
+
+        .img-crop-cover {
+            height: 20vh;
+            width: 20vh;
+            object-fit: cover;
+            border: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="image-field">
+        <div class="the-image origin"></div>
+        1.1. origin image. (only set the height)
+    </div>
+    <div class="image-field">
+        <div class="the-image scale-contain"></div>
+        1.2. scale and show all image
+    </div>
+    <div class="image-field">
+        <div class="the-image no-stretch-cover"></div>
+        1.3. crop the image, scale with width shorter edge full with div
+    </div>
+    <div class="image-field">
+        <img src="image/QQ20181210-1.jpg" class="img-origin" />
+        <br/>
+        2.1. &lt;img> origin
+    </div>
+    <div class="image-field">
+        <img src="image/QQ20181210-1.jpg" class="img-crop-contain" />
+        <br/>
+        2.2. &lt;img> scale show all image
+    </div>
+    <div class="image-field">
+        <img src="image/QQ20181210-1.jpg" class="img-crop-cover" />
+        <br/>
+        2.3. &lt;img> scale with width shorter edge full with div
+    </div>
+</div>
+</body>
+</html>
