@@ -11,6 +11,36 @@
 
 ![Alt text](image/contain-demo.png?raw=true "Contain")
 
+img:
+```
+        <img src="image/QQ20181210-1.jpg" class="img-crop-contain" />
+
+        .img-crop-contain {
+            height: 20vh;
+            width: 20vh;
+            object-fit: contain;
+            border: solid 1px black;
+            background: gray;
+        }
+```
+
+background:
+```
+        <div class="the-image scale-contain"></div>
+
+        .the-image {
+            background-image: url("image/QQ20181210-1.jpg");
+            background-repeat: no-repeat;
+        }
+        .scale-contain {
+            background-size: contain;
+            background-position: center center;
+            width: 20vh;
+            height: 20vh;
+            border: solid 1px black;
+        }
+```
+
 ### 2. cover方式
 缩放后，裁剪图片的一部分，只显示图片的中间部分。保证图片的短边完全显示，长边裁剪。不会有黑边。
 
@@ -18,3 +48,31 @@
 缺点：图片被裁剪
 
 ![Alt text](image/cover-demo.png?raw=true "Cover")
+
+
+img:
+```
+        <img src="image/QQ20181210-1.jpg" class="img-crop-cover" />
+
+        .img-crop-cover {
+            height: 20vh;
+            width: 20vh;
+            object-fit: cover;
+        }
+```
+
+background:
+```
+        <div class="the-image no-stretch-cover"></div>
+
+        .the-image {
+            background-image: url("image/QQ20181210-1.jpg");
+            background-repeat: no-repeat;
+        }
+        .no-stretch-cover {
+            background-size: cover;
+            background-position: center center;
+            width: 20vh;
+            height: 20vh;
+        }
+```
